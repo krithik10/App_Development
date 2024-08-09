@@ -1,0 +1,48 @@
+/* Users.css */
+.users-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .users-container h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 30px;
+  }
+  
+  .users-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .user-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .user-card h2 {
+    font-size: 22px;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .user-card strong {
+    color: #343a40;
+  }
+  
