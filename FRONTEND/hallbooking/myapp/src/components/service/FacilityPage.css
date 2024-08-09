@@ -1,0 +1,75 @@
+.facility-page {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.facility-page h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reasons-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.reason-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.reason-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.reason-item h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.reason-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.reason-item:nth-child(odd) {
+    background: linear-gradient(135deg, #f0f9ff, #cbebff);
+}
+
+.reason-item:nth-child(even) {
+    background: linear-gradient(135deg, #fff8e1, #ffe3b0);
+}
+
+.reason-item h2::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.reason-item p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
