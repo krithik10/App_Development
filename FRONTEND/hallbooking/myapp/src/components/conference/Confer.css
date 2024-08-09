@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  .conferenceContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .header1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a90e2;
+    
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  
+  .searchBar input[type="text"],
+  .searchBar input[type="date"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchBar input[type="text"] {
+    width: 350px;
+  }
+  
+  .calendar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .calendarIcon {
+    font-size: 1.5rem;
+    color: #4a90e2;
+  }
+  
+  .hallsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+  }
+  
+  .fpItem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .fpItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .fpImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .fpName {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+  
+  .fpCity,
+  .fpPrice,
+  .hallContact {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0 15px 10px;
+  }
+  
+  .fpRating {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+  }
+  
+  .fpRating > button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1rem;
+    margin-left: auto;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fpRating > button:hover {
+    background-color: #357ab8;
+  }
+  
+  .fpRating > span {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .available {
+    color: #28a745;
+  }
+  
+  .unavailable {
+    color: #dc3545;
+  }
+  
+  .infoIcon {
+    margin-right: 5px;
+  }
+  
+  .viewMoreContainer {
+    margin-top: 30px;
+  }
+  
+  .viewMoreButton {
+    background-color: #005bc4;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewMoreButton:hover {
+    background-color: #357ab8;
+  }
+  

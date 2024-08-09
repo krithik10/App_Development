@@ -1,0 +1,135 @@
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .conference-info {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .conference-info h1 {
+    font-size: 28px;
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .conference-info p {
+    font-size: 18px;
+    color: #495057;
+    line-height: 1.6;
+  }
+  
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    
+  }
+  
+  .booking-card, .booking-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%; /* Adjust width as needed */
+    box-sizing: border-box;
+  }
+  
+  .booking-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .booking-card h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .booking-card p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #495057;
+  }
+  
+  .booking-card strong {
+    color: #343a40;
+  }
+  
+  .booking-form h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .booking-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .booking-form label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input, .booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #495057;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .booking-form input:focus, .booking-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+  }
+  
+  .booking-form button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column;
+    }
+  
+    .booking-card, .booking-form {
+      width: 100%;
+      margin-bottom: 20px;
+      /* background-color: #00bbff7c; */
+    }
+  }
+  
